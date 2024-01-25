@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="shortcut icon" href="images/dumbbell.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <div class="main-container">
+            <div class="leftside">
+                <img src="images/Healthy habit-rafiki.svg" alt="Pessoa malhando">
+            </div>
+            <div class="rightside">
+                <div class="card">
+                    <div class="inputbox">
+                        <label for="altura">Altura</label>
+                        <p class="valor valor-altura">180cm</p>
+                        <input type="range" class="range-input" name="altura" id="altura" min="140" max="220">
+                    </div>
+                    <div class="inputbox">
+                        <label for="peso">peso</label>
+                        <p class="valor valor-peso">70kg</p>
+                        <input type="range" class="range-input" name="peso" id="peso" min="40" max="150">
+                    </div>
+                    <button class="btn-calculate">Calcular IMC</button>
+                    <div class="resultbox">
+                        <p>Seu IMC</p>
+                        <h2 id="resultnumber">0,0</h2>
+                        <h3 class="resulttext" id="resulttext">abaixo do peso</h3>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <div class="table">
+                <ul>
+                    <li>
+                        <p>18,5 ou menos</p>
+                        <h2>Abaixo do normal</h2>
+                    </li>
+                    <li>
+                        <p>Entre 18,6 e 24,9</p>
+                        <h2>Normal</h2>
+                    </li>
+                    <li>
+                        <p>Entre 25,0 e 29,9</p>
+                        <h2>Sobrepeso</h2>
+                    </li>
+                    <li>
+                        <p>Entre 30,0 e 34,9</p>
+                        <h2>Obesidade grau I</h2>
+                    </li>
+                    <li>
+                        <p>Entre 35,0 e 39,9</p>
+                        <h2>Obesidade grau II</h2>
+                    </li>
+                    <li>
+                        <p>Acima de 40,0</p>
+                        <h2>Obesidade grau III</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
